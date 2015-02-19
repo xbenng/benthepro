@@ -30,7 +30,7 @@ $in = "led=?\r\n";
 socket_write($socket, $in, strlen($in));
 $out = '';
 $out = socket_read($socket, 2048);
-echo $out;
+//echo $out;
 $ledstate = $out;
 
 if (isset($_POST['ledOn'])){
@@ -43,7 +43,7 @@ if ($ledstate == 1)
 socket_write($socket, $in, strlen($in));
 $out = '';
 $out = socket_read($socket, 2048);
-echo $out;
+//echo $out;
 $ledstate = $out;
 }
 
