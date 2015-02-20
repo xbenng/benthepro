@@ -1,3 +1,12 @@
+<?php
+session_start();
+if (!sset($_SESSION['session']))
+{
+header('Location: login.php');
+die();
+}
+
+?>
 <html>
 
 <h2>Room 410's Lights</h2>
