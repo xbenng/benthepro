@@ -29,7 +29,7 @@ if ($socket === false) {
 
 $result = socket_connect($socket, $address, $service_port);
 if ($result === false) {
-    echo "socket_connect() to $address:$service_port failed.\nReason: ($result) " . socket_strerror(socket_last_error($socket)) . "\n";
+    echo "socket_connect() to $address:$service_port failed. <br> Reason: ($result) " . socket_strerror(socket_last_error($socket)) . "\n";
 } else {
 }
 
