@@ -1,11 +1,10 @@
 <?php
 session_start();
-if (!sset($_SESSION['session']))
+if (!isset($_SESSION['session']))
 {
-header('Location: login.php');
-die();
+	header('Location: login.php');
+	die();
 }
-
 ?>
 <html>
 
